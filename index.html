@@ -3,45 +3,73 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#d0ecde">
+<meta name="theme-color" content="#f5f1eb">
 <title>Promenade, a walking journal</title>
 <meta name="description" content="Promenade is a walking journal, not a fitness tracker. Find a walk, keep it, collect the places, and share it.">
 <link rel="icon" href="assets/favicon.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css?v=3">
 </head>
 <body>
+<header class="bar">
+  <div class="bar-inner">
+    <a class="bar-contact" href="support/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>
+      Contact
+    </a>
+    <a class="home-link" href="./"><img src="assets/icon.png" alt="">Promenade</a>
+    <div class="bar-right">
+      <span class="pill">Coming soon</span>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+        <svg class="icon-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        <span class="menu-label" aria-hidden="true">Menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+<div id="menu" class="menu" hidden>
+  <nav aria-label="Menu">
+    <a href="./">Home</a>
+    <a href="privacy/">Privacy policy</a>
+    <a href="support/">Support</a>
+  </nav>
+</div>
+
 <main class="wrap">
   <section class="hero">
-    <img src="assets/icon.png" alt="">
-    <h1>Promenade</h1>
-    <p class="tagline">every step tells a story</p>
-    <p class="lead">Promenade is a walking journal, not a fitness tracker.</p>
+    <div class="hero-text">
+      <h1>every step tells a story</h1>
+      <p class="lead">Promenade is a walking journal, not a fitness tracker.</p>
+    </div>
+    <div class="phone">
+      <img src="assets/app-screen.jpg?v=3" width="603" height="1311" alt="Promenade on iPhone, showing The Arboretum in State College: a pink rose, 3.5 miles, easy.">
+    </div>
   </section>
 
   <section class="features" aria-label="What Promenade does">
+    <button class="pile-next" type="button" aria-label="Next postcard"></button>
     <article class="card">
-      <img src="assets/find.png" alt="" width="720" height="510">
-      <h2>Find a walk</h2>
-      <p>Famous routes and quiet gardens, with notes on benches, shade, and step-free paths.</p>
+      <div class="pc"><span class="crop"><img src="assets/find.png" alt="" width="720" height="510"></span></div>
+      <div class="txt"><h2>Find a walk</h2>
+      <p>Famous routes and quiet gardens, with notes on benches, shade, and step-free paths.</p></div>
     </article>
     <article class="card">
-      <img src="assets/keep.png" alt="" width="720" height="510">
-      <h2>Keep it</h2>
-      <p>Log a walk as you take it, import one from Apple Health, or build one from photos you already took.</p>
+      <div class="pc"><span class="crop"><img src="assets/keep.png" alt="" width="720" height="510"></span></div>
+      <div class="txt"><h2>Keep it</h2>
+      <p>Log a walk as you take it, import one from Apple Health, or build one from photos you already took.</p></div>
     </article>
     <article class="card">
-      <img src="assets/collect.png" alt="" width="720" height="510">
-      <h2>Collect the places</h2>
-      <p>New parks, neighborhoods, and cities each earn a stamp in your Walking Passport.</p>
+      <div class="pc"><span class="crop"><img src="assets/collect.png" alt="" width="720" height="510"></span></div>
+      <div class="txt"><h2>Collect the places</h2>
+      <p>New parks, neighborhoods, and cities each earn a stamp in your Walking Passport.</p></div>
     </article>
     <article class="card">
-      <img src="assets/share.png" alt="" width="720" height="510">
-      <h2>Share it</h2>
-      <p>Send a walk as a postcard, or make a year of them into a book you can print.</p>
+      <div class="pc"><span class="crop"><img src="assets/share.png" alt="" width="720" height="510"></span></div>
+      <div class="txt"><h2>Share it</h2>
+      <p>Send a walk as a postcard, or make a year of them into a book you can print.</p></div>
     </article>
   </section>
-
   <section class="promise">
     <blockquote><span>No streaks.</span> <span>No calories.</span> <span>No leaderboards.</span><br><span>Just the walk,</span> <span>and your memories.</span></blockquote>
     <p>No account. Everything stays on your phone.</p>
@@ -54,5 +82,7 @@
     <a href="privacy/">Privacy policy</a><span aria-hidden="true">·</span><a href="support/">Support</a>
   </nav>
 </footer>
+<script src="assets/site.js?v=3" defer></script>
+<script src="assets/home.js?v=3" defer></script>
 </body>
 </html>
